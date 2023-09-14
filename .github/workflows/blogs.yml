@@ -1,0 +1,28 @@
+name: blogs Deploy
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - run: cp -rf ./blog /tmp/blog
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          repository: wwqdrh/gitpage
+          branch: main
+          token: ${{ secrets.REPO_TOKEN }}
+      - name: Copy files
+        run: cp -rf /tmp/blog ./src/data/blog
+      - name: Sync Blog
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Sync Blog"
+          git push --force origin main
