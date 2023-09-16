@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - run: cp -rf ./blog /tmp/blog
+      - run: cp -rf ./blog /tmp/blog && cp -rf ./images /tmp/images
       - name: Checkout code
         uses: actions/checkout@v2
         with:
@@ -18,7 +18,7 @@ jobs:
           branch: main
           token: ${{ secrets.REPO_TOKEN }}
       - name: Copy files
-        run: cp -rf /tmp/blog ./src/data/blog
+        run: cp -rf /tmp/blog/* ./src/data/blog/ && cp -rf /tmp/images/* ./public/images/
       - name: Sync Blog
         run: |
           git config user.name "GitHub Actions"

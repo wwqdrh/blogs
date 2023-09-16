@@ -47,7 +47,7 @@ sudo mount -t overlay overlay \
 
 OverlayFS 就是 UnionFS 的一种实现，最底下这一层里的文件是不会被修改的,upper目录是可读写的，最上面的"merged" ，它是挂载点（mount point）目录，也是用户看到的目录，用户的实际文件操作在这里进行。
 
-<img src="/static/images/blogs/overlayfs.jpeg" />
+<img src="/images/blogs/overlayfs.jpeg" />
 
 `1、新建文件`
 
