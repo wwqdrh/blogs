@@ -50,7 +50,7 @@ kubectl apply -f https://raw.githubusercontent.com/arthurk/tekton-triggers-examp
 
 ### 流水线
 
-<img src="/static/images/blog/%E6%B5%81%E6%B0%B4%E7%BA%BF.png" />
+<img src="/images/blogs/%E6%B5%81%E6%B0%B4%E7%BA%BF.png" />
 
 - Task：Tekton中的最小单元，代表一个任务模板，包括多个步骤。每一个操作定义为Task中的一个step
 - Pipeline：多个 Task 组成的有向无环图，定义了流水线的模板
@@ -60,7 +60,7 @@ kubectl apply -f https://raw.githubusercontent.com/arthurk/tekton-triggers-examp
 
 ### 事件监听
 
-<img src="/static/images/blog/%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91.png" />
+<img src="/images/blogs/%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91.png" />
 
 - EventListener：监听器，提供http接口外部事件入口 ，以便于外部事件推送，比如配置Gitlab的Webhook。
 - Trigger：指定当EventListener检测到事件发生时会发生什么，它会定义TriggerBinding、TriggerTemplate以及可选的Interceptor。
@@ -133,7 +133,7 @@ spec:
 
 ### tekton+argocd
 
-<img src="/static/images/blog/tekton%2Bargocd.png" />
+<img src="/images/blogs/tekton%2Bargocd.png" />
 
 - 新建应用编排配置仓库
 - argocd监控配置仓库

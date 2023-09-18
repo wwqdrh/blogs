@@ -71,6 +71,6 @@ echo 50000 >> /sys/fs/cgroup/ctest/cpu.max # 0.5个CPU
 
 实验结果
 
-<img src="/static/images/blog/cgroupcpu实验.png" />
+<img src="/images/blogs/cgroupcpu实验.png" />
 
 可以看到两个加起来只占了0.5个，说明成功了

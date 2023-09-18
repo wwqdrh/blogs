@@ -298,9 +298,9 @@ Telemetry:
 
 效果
 
-<img src="/static/images/blog/jaeger-1.png" />
+<img src="/images/blogs/jaeger-1.png" />
 
-<img src="/static/images/blog/jaeger-2.png" />
+<img src="/images/blogs/jaeger-2.png" />
 
 ## 服务监控
 
@@ -377,7 +377,7 @@ scrape_configs:
 
 效果
 
-<img src="/static/images/blog/prometheus-1.png" />
+<img src="/images/blogs/prometheus-1.png" />
 
 ## 分布式事务
 

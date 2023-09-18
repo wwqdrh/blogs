@@ -149,7 +149,7 @@ HTTP2 是一个全双工的流式协议, 服务端也可以主动 ping 客户端
 
 ## 数据流
 
-<img src="/static/images/blog/grpc.png" />
+<img src="/images/blogs/grpc.png" />
 
 ```proto
 service HelloService {

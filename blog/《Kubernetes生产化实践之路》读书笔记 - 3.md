@@ -47,7 +47,7 @@ netfilter是一个基于用户自定义Hook实现多种网络操作的Linux内�
 
 iptables中与这些hook点对应的规则集(iptables Chain): PREROUTING，INPUT，FORWARD，OUTPUT，POSTROUTING
 
-<img src="/static/images/blog/iptables.jpg" />
+<img src="/images/blogs/iptables.jpg" />
 
 > 不同的hook点可以有多个表，处理的优先级不同，raw最大，nat最小
 
@@ -65,7 +65,7 @@ ipset能够简化iptables的规则，将要处理的IP地址及端口放进一�
 
 仅实现了LOCAL_IN、LOCAL_OUT、FORWARD这三个Hook点
 
-<img src="/static/images/blog/ipvs.jpg" />
+<img src="/images/blogs/ipvs.jpg" />
 
 ## 负载均衡
 
@@ -97,7 +97,7 @@ Service默认的网络类型是clusterIP(具体值是在集群内部的虚拟IP�
 - nodePort: 每个节点的kube-proxy会尝试在服务分配的nodePort上建立侦听器接收请求，并转发给服务对应的后端Pod实例，一般用于集群外部访问，范围时3000-3200，非标准大端口可能需要额外的防火墙配置
 - LoadBalancer
 
-<img src="/static/images/blog/负载均衡情况.jpg" />
+<img src="/images/blogs/负载均衡情况.jpg" />
 
 ServiceController主要职责就是监控Service和Endpoint的变化，如果捕获到Service创建的事件，则调用负载均衡API完成配置: 负载均衡器调度，虚拟IP地址分配、负载均衡器配置
 
@@ -135,13 +135,13 @@ API网关将各系统对外暴露的服务聚合在一起，所有要调用这�
 
 API网关是系统的入口，所以必须保证网关的高可用，多实例部署，并且在网关之上还需要通过负载均衡提供虚拟IP地址
 
-<img src="/static/images/blog/API网关数据转发.jpg" />
+<img src="/images/blogs/API网关数据转发.jpg" />
 
 基于API网关的数据转发会导致上层设备的流量压力，额外的网络跳转，增加了网络延迟和超时出错的概率，优化方案就是服务网格，一个可配置、低延迟的网络架构，概括就是为了减少网络延迟及对集中式负载均衡器的依赖需要做的事将集中式负载均衡分散开来，编程分布式负载均衡
 
 服务网格就是把API网关功能下发作为Sidecar，这样服务与服务之间的东西流量不再需要经过API网关，只需将请求转交给SideCar，由SideCar做请求路由和负载均衡，然后直接发起向上游服务器的连接
 
-<img src="/static/images/blog/sidecar架构.jpg" />
+<img src="/images/blogs/sidecar架构.jpg" />
 
 ## Envoy
 
@@ -183,7 +183,7 @@ VMWare公司主导的开源Kubernetes Ingress Controller组件，采用Envoy作�
 
 架构是Envoy作为数据平面组件，istiod控制平面组件，istiod的相较于早期的分散部署，现在的集中模式，简化运维，以及提供控制平面的稳定性
 
-<img src="/static/images/blog/istio架构.jpg" />
+<img src="/images/blogs/istio架构.jpg" />
 
 istio安装好后，可以通过定义Istio对象将服务发布至API网关，并且根据实际场景决定是否加入服务网格，Istio支持的功能包括
 
@@ -198,6 +198,6 @@ istio的流量劫持机制，可以通过手动(`istioctl kube-inject -f example
 
 istio-init就是来改写iptables
 
-<img src="/static/images/blog/istio流量改写.jpg" />
+<img src="/images/blogs/istio流量改写.jpg" />
 
 > istio具体如何使用查看官方文档

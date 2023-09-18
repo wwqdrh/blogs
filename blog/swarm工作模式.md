@@ -27,7 +27,7 @@ worker节点唯一的工作内容就是执行容器
 
 > service -> container -> task
 
-<img src="/static/images/blog/swarmtask.png" />
+<img src="/images/blogs/swarmtask.png" />
 
 service类型
 
@@ -36,4 +36,4 @@ service类型
 
 # service创建流程
 
-<img src="/static/images/blog/service创建流程.png" />
+<img src="/images/blogs/service创建流程.png" />

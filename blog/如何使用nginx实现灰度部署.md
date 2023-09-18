@@ -10,7 +10,7 @@ summary: 灰度部署
 
 <br />
 
-<img src="/static/images/blog/nginx简介.png" />
+<img src="/images/blogs/nginx简介.png" />
 
 ## 什么是灰度部署
 
@@ -43,7 +43,7 @@ summary: 灰度部署
 
 <br/>
 
-<img src="/static/images/blog/不停机更新.png" />
+<img src="/images/blogs/不停机更新.png" />
 
 <br/>
 

@@ -537,7 +537,7 @@ list Eat
 
 brew install graphviz
 
-<img src="/static/images/blog/cpu-web.png" />
+<img src="/images/blogs/cpu-web.png" />
 
 修复问题代码继续后面的操作
 
@@ -582,7 +582,7 @@ gc 5 @12.040s 0%: 0.070+0.53+0.002 ms clock, 0.070+0.23/0.19/0+0.002 ms cpu, 16-
 gc 6 @15.047s 0%: 0.11+0.66+0.002 ms clock, 0.11+0.23/0.27/0+0.002 ms cpu, 16->16->0 MB, 17 MB goal, 1 P
 ```
 
-<img src="/static/images/blog/gc_info.png" />
+<img src="/images/blogs/gc_info.png" />
 
 每次gc都从16MB释放到0MB，说明程序在不断的声明然后释放内存
 

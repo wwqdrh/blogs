@@ -102,7 +102,7 @@ kubernetes可以管理ServiceAccount(用来标识和管理系统组件的)，另
 
 kubernetes原生支持三类认证对象: 用户(ServiceAccount)、组、服务账户。原生提供了多种认证方式（ServiceAccount、ServiceAccount TokenRequest、客户端证书认证、用户名密码认证、known Token认证、Bootstrap Token认证、Webhook Token认证），都是通过插件的形式添加到API Server中
 
-<img src="/static/images/blog/认证方式.jpg" />
+<img src="/images/blogs/认证方式.jpg" />
 
 ## 授权
 
@@ -184,7 +184,7 @@ kubelet作为一个Agent，拥有对Kubernetes资源完整的访问权限，从A
 - Ingress: 一组入站流量的白名单规则
 - Egress: 一组出站流量的白名单规则
 
-<img src="/static/images/blog/网络策略.jpg" />
+<img src="/images/blogs/网络策略.jpg" />
 
 不过这些规则只是从语义层面定义了网络隔离的模型，具体的实现需要相应的网络插件支持，主流的比如Calico、Kube Router等
 

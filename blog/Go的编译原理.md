@@ -188,7 +188,7 @@ GOARCH：需要编译到的CPU架构
 
 将token转为语法树
 
-<img src="/static/images/blog/ast.png" />
+<img src="/images/blogs/ast.png" />
 
 ## 语义分析
 
