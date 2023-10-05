@@ -17,8 +17,10 @@ jobs:
           repository: wwqdrh/gitpage
           branch: main
           token: ${{ secrets.REPO_TOKEN }}
-      - name: Copy files
-        run: cp -rf /tmp/blog/* ./src/data/blog/ && cp -rf /tmp/images/* ./public/images/
+      - name: flush blog
+        run: rm -rf ./src/data/blog && cp -rf /tmp/blog ./src/data/blog
+      - name: flush images
+        run: rm -rf ./public/images/blogs && cp -rf /tmp/images/blogs ./public/images/blogs
       - name: Sync Blog
         run: |
           git config user.name "GitHub Actions"
