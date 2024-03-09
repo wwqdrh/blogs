@@ -1,11 +1,3 @@
----
-title: golang工程化纵览
-date: '2022-07-03'
-tags: ['Golang']
-draft: false
-summary: golang工程化所用到的工具概览
----
-
 # fmt
 
 代码风格格式化 gofmt、go fmt标准工具
