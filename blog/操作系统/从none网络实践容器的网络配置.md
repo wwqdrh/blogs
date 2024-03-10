@@ -1,11 +1,3 @@
----
-title: 手动建立容器网络实践
-date: '2022-10-31'
-tags: ['实践']
-draft: false
-summary: amespace-网络配置实践
----
-
 # 容器到宿主
 
 对于容器从自己的 Network Namespace 连接到 Host Network Namespace 的方法，一般来说就只有两类设备接口：一类是veth，另外一类是 macvlan/ipvlan。

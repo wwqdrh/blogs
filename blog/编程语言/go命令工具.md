@@ -1,11 +1,3 @@
----
-title: golang命令工具
-date: '2022-10-10'
-tags: ['Golang']
-draft: false
-summary: golang命令工具
----
-
 > 参考: https://hyper0x.github.io/go_command_tutorial/#/0.1
 
 # 内置工具

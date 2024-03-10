@@ -1,11 +1,3 @@
----
-title: go-zero微服务实践
-date: '2022-06-20'
-tags: ['实践','云原生']
-draft: false
-summary: 微服务简介以及go-zero如何落地
----
-
 # 简介
 
 介绍go-zero之前先说明什么是微服务、为什么要用微服务、微服务有哪些缺点

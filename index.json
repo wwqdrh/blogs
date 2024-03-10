@@ -7,18 +7,187 @@
         "博客随笔"
     ],
     "blogs": {
-        "操作系统": [],
-        "人工智能": [],
-        "编程语言": [],
-        "Web开发": [],
-        "博客随笔": [
+        "操作系统": [
             {
-                "title": "golang工程化纵览",
+                "title": "操作系统性能分析工具",
+                "date": "2022-10-10",
+                "tags": [
+                    "操作系统",
+                    "性能分析"
+                ],
+                "draft": false,
+                "summary": "操作系统性能分析工具",
+                "file": "blog/操作系统/操作系统性能分析工具.md"
+            },
+            {
+                "title": "内存限制实战",
+                "date": "2022-10-30",
+                "tags": [
+                    "操作系统",
+                    "容器",
+                    "实战"
+                ],
+                "draft": false,
+                "summary": "cgroup-内存限制实践",
+                "file": "blog/操作系统/内存限制实践.md"
+            },
+            {
+                "title": "容器操作指南",
+                "date": "2022-10-17",
+                "tags": [
+                    "操作系统",
+                    "容器"
+                ],
+                "draft": false,
+                "summary": "容器操作指南",
+                "file": "blog/操作系统/容器操作指南.md"
+            },
+            {
+                "title": "容器核心点",
+                "date": "2022-08-14",
+                "tags": [
+                    "操作系统",
+                    "容器"
+                ],
+                "draft": false,
+                "summary": "容器使用与主机的区别",
+                "file": "blog/操作系统/容器核心点概览.md"
+            },
+            {
+                "title": "容器之间的网络模式",
+                "date": "2022-07-04",
+                "tags": [
+                    "操作系统",
+                    "容器"
+                ],
+                "draft": false,
+                "summary": "容器之间的网络模式简介",
+                "file": "blog/操作系统/容器之间的网络模式.md"
+            },
+            {
+                "title": "容器中磁盘容量限制实践",
+                "date": "2022-11-02",
+                "tags": [
+                    "操作系统",
+                    "容器",
+                    "实战"
+                ],
+                "draft": false,
+                "summary": "容器中磁盘容量限制实践",
+                "file": "blog/操作系统/容器中磁盘容量限制.md"
+            },
+            {
+                "title": "手动建立容器网络实践",
+                "date": "2022-10-31",
+                "tags": [
+                    "操作系统",
+                    "容器",
+                    "实战"
+                ],
+                "draft": false,
+                "summary": "namespace-网络配置实践, 从none网络实践容器的网络配置",
+                "file": "blog/操作系统/从none网络实践容器的网络配置.md"
+            }
+        ],
+        "人工智能": [
+            {
+                "title": "与chatgpt对话-什么是redis",
+                "date": "2023-03-16",
+                "tags": [
+                    "chatgpt",
+                    "Redis"
+                ],
+                "draft": false,
+                "summary": "与chatgpt对话-什么是redis",
+                "file": "blog/人工智能/chatgpt-什么是redis.md"
+            }
+        ],
+        "编程语言": [
+            {
+                "title": "golang工程化总览",
                 "date": "2022-07-03",
-                "tags": ["Golang"],
+                "tags": [
+                    "Golang"
+                ],
                 "draft": false,
                 "summary": "golang工程化所用到的工具概览",
-                "file": "blog/golang工程化总览.md"
+                "file": "blog/编程语言/golang工程化总览.md"
+            },
+            {
+                "title": "go的编译原理",
+                "date": "2022-10-10",
+                "tags": [
+                    "Golang"
+                ],
+                "draft": false,
+                "summary": "golang编译原理",
+                "file": "blog/编程语言/Go的编译原理.md"
+            },
+            {
+                "title": "go命令工具",
+                "date": "2022-10-10",
+                "tags": [
+                    "Golang"
+                ],
+                "draft": false,
+                "summary": "golang命令工具",
+                "file": "blog/编程语言/go命令工具.md"
+            },
+            {
+                "title": "go-zero微服务实践",
+                "date": "2022-06-20",
+                "tags": [
+                    "Golang",
+                    "实战",
+                    "微服务"
+                ],
+                "draft": false,
+                "summary": "微服务简介以及go-zero如何落地",
+                "file": "blog/编程语言/go-zero微服务实践.md"
+            },
+            {
+                "title": "gmp模型",
+                "date": "2023-03-01",
+                "tags": [
+                    "Golang", "原理"
+                ],
+                "draft": false,
+                "summary": "golang中并发编程的gmp模型",
+                "file": "blog/编程语言/gmp模型.md"
+            }
+        ],
+        "Web开发": [
+            {
+                "title": "grpc手册",
+                "date": "2022-08-13",
+                "tags": [
+                    "网络"
+                ],
+                "draft": false,
+                "summary": "grpc介绍以及使用",
+                "file": "blog/Web开发/grpc手册.md"
+            }
+        ],
+        "博客随笔": [
+            {
+                "title": "git环境搭建",
+                "date": "2022-10-08",
+                "tags": [
+                    "实战"
+                ],
+                "draft": false,
+                "summary": "私人git服务搭建",
+                "file": "blog/博客随笔/git服务器搭建.md"
+            },
+            {
+                "title": "ssh环境配置",
+                "date": "2022-10-08",
+                "tags": [
+                    "实战"
+                ],
+                "draft": false,
+                "summary": "ssh环境配置",
+                "file": "blog/博客随笔/ssh环境配置.md"
             }
         ]
     }

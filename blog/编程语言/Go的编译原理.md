@@ -1,11 +1,3 @@
----
-title: golang编译原理
-date: '2022-10-10'
-tags: ['Golang']
-draft: false
-summary: golang编译原理
----
-
 # 基础环境
 
 GoRoot：Go的安装目录，go/pkg/tool/[platform]下面有些重要的有compile(编译器)、link（链接器）
