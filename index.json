@@ -1,5 +1,6 @@
 {
     "tag": [
+        "源码解读",
         "操作系统",
         "人工智能",
         "编程语言",
@@ -7,6 +8,52 @@
         "博客随笔"
     ],
     "blogs": {
+        "源码解读": [
+            {
+                "title": "binder驱动开发-01",
+                "date": "2024-04-20",
+                "tags": [
+                    "操作系统",
+                    "源码"
+                ],
+                "draft": false,
+                "summary": "Linux驱动",
+                "file": "blog/源码解读/binder驱动开发-01.md"
+            },
+            {
+                "title": "binder驱动开发-02",
+                "date": "2024-04-20",
+                "tags": [
+                    "操作系统",
+                    "源码"
+                ],
+                "draft": false,
+                "summary": "Linux驱动",
+                "file": "blog/源码解读/binder驱动开发-02.md"
+            },
+            {
+                "title": "binder驱动开发-03",
+                "date": "2024-04-20",
+                "tags": [
+                    "操作系统",
+                    "源码"
+                ],
+                "draft": false,
+                "summary": "Linux驱动",
+                "file": "blog/源码解读/binder驱动开发-03.md"
+            },
+            {
+                "title": "binder驱动开发-04",
+                "date": "2024-04-20",
+                "tags": [
+                    "操作系统",
+                    "源码"
+                ],
+                "draft": false,
+                "summary": "Linux驱动",
+                "file": "blog/源码解读/binder驱动开发-04.md"
+            }
+        ],
         "操作系统": [
             {
                 "title": "操作系统性能分析工具",
