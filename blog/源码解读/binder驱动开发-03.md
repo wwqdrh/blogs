@@ -77,7 +77,7 @@ void binder_loop(struct binder_state *bs, binder_handler func)
             ALOGE("binder_loop: ioctl failed (%s)\n", strerror(errnum: errno));
             break;
         }
-        res = binder_parse(bs, bio: 0, ptr: (uintptr_t) readbuf, size: bwr.read_consumed, func);
+        res = binder_parse(bs, 0, (uintptr_t) readbuf, bwr.read_consumed, func);
         if (res == 0) {
             ALOGE("binder_loop: unexpected reply?!\n");
             break;

@@ -11,10 +11,9 @@ sp<IServiceManager> defaultServiceManager()
 {
     if (gDefaultServiceManager != NULL) return gDefaultServiceManager;
     {
-        AutoMutex _l(&mutex: gDefaultServiceManagerLock);
+        AutoMutex _l(&gDefaultServiceManagerLock);
         while (gDefaultServiceManager == NULL) {
-            gDefaultServiceManager = interface_cast<IServiceManager>(
-                obj: ProcessState::self()->getContextObject(caller: NULL));
+            gDefaultServiceManager = interface_cast<IServiceManager>(ProcessState::self()->getContextObject(caller: NULL));
             if (gDefaultServiceManager == NULL)
                 sleep(seconds: 1);
         }
@@ -38,7 +37,7 @@ sp<IBinder> ProcessState::getStrongProxyForHandle(int32_t handle)
             if (handle == 0) {
                 Parcel data;
                 status_t status = IPCThreadState::self()->transact(
-                        handle: 0, code: IBinder::PING_TRANSACTION, data, reply: NULL, flags: 0);
+                        0, IBinder::PING_TRANSACTION, data, NULL, 0);
                 if (status == DEAD_OBJECT)
                    return NULL;
             }
@@ -77,9 +76,9 @@ public:
      virtual sp<IBinder> checkService( const String16& name) const
      {
          Parcel data, reply;
-         data.writeInterfaceToken(interface: IServiceManager::getInterfaceDescriptor());
-         data.writeString16(str: name);
-         remote()->transact(code: CHECK_SERVICE_TRANSACTION, data, reply: &reply);
+         data.writeInterfaceToken(IServiceManager::getInterfaceDescriptor());
+         data.writeString16(name);
+         remote()->transact(CHECK_SERVICE_TRANSACTION, data, &reply);
          return reply.readStrongBinder();
      }
 
@@ -87,11 +86,11 @@ public:
              bool allowIsolated)
      {
          Parcel data, reply;
-         data.writeInterfaceToken(interface: IServiceManager::getInterfaceDescriptor());
-         data.writeString16(str: name);
-         data.writeStrongBinder(val: service);
-         data.writeInt32(val: allowIsolated ? 1 : 0);
-         status_t err = remote()->transact(code: ADD_SERVICE_TRANSACTION, data, reply: &reply);
+         data.writeInterfaceToken(IServiceManager::getInterfaceDescriptor());
+         data.writeString16(name);
+         data.writeStrongBinder(service);
+         data.writeInt32(allowIsolated ? 1 : 0);
+         status_t err = remote()->transact(ADD_SERVICE_TRANSACTION, data, &reply);
          return err == NO_ERROR ? reply.readExceptionCode() : err;
      }
 }

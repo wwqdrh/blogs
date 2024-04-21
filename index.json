@@ -52,6 +52,28 @@
                 "draft": false,
                 "summary": "Linux驱动",
                 "file": "blog/源码解读/binder驱动开发-04.md"
+            },
+            {
+                "title": "binder驱动开发-05",
+                "date": "2024-04-21",
+                "tags": [
+                    "操作系统",
+                    "源码"
+                ],
+                "draft": false,
+                "summary": "Linux驱动",
+                "file": "blog/源码解读/binder驱动开发-05.md"
+            },
+            {
+                "title": "binder驱动开发-06",
+                "date": "2024-04-21",
+                "tags": [
+                    "操作系统",
+                    "源码"
+                ],
+                "draft": false,
+                "summary": "Linux驱动",
+                "file": "blog/源码解读/binder驱动开发-06.md"
             }
         ],
         "操作系统": [
